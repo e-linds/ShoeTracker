@@ -21,7 +21,7 @@ function AddNewShoe({ setShoes, shoes, setCurrentShoe }) {
             image: (e.target.image.value ? e.target.image.value : "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"),
             terrain: e.target.terrain.value.charAt(0).toUpperCase() + e.target.terrain.value.slice(1),
             miles: e.target.miles.value,
-            comments: e.target.comments.value,
+            notes: e.target.notes.value,
             locations: e.target.locations.value
         }
 
@@ -64,8 +64,6 @@ function AddNewShoe({ setShoes, shoes, setCurrentShoe }) {
                 </select>
                 <br></br>
                 <input name="miles" placeholder="Lifetime Miles"></input>
-                <br></br>
-                <textarea name="comments" placeholder="Comments"></textarea>
                 <br></br>
                 <button type="submit" onClick={handleClickClose}>Add</button>
             </form>

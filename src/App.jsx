@@ -3,6 +3,7 @@ import './App.css'
 import Sidebar from "./Sidebar.jsx"
 import ShoeDetails from "./ShoeDetails.jsx"
 import Header from "./Header.jsx"
+import MileageAnalytics from "./MileageAnalytics.jsx"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <div className="main-page">
       <Sidebar shoes={shoes} currentShoe={currentShoe} setCurrentShoe={setCurrentShoe} />  
       <ShoeDetails currentShoe={currentShoe} setCurrentShoe={setCurrentShoe}/>   
+      <MileageAnalytics />
     </div>
     </>
   )
