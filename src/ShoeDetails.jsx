@@ -16,7 +16,7 @@ function ShoeDetails({ currentShoe }) {
                 <ul>{locations?.map((each) => {
                     return <li>{each}</li>})}
                 </ul>
-                {/* <button>{currentShoe ? "Add Run" : null}</button> */}
+                {currentShoe ? <button>Add Run</button>: null}
             </div>
             <img src={image}/>
         </div>
