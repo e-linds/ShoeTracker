@@ -14,7 +14,6 @@ function ShoeBlock({ shoes, id, image, currentShoe, setCurrentShoe }) {
     }
 
 
-
  return(
     <div className="shoeblock" onClick={handleClick}>
         <img src={image ? image: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"}/>

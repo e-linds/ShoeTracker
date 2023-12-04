@@ -16,14 +16,13 @@ function App() {
 
   }, [])
 
- 
 
   return (
     <>
     <Header setShoes={setShoes} shoes={shoes} setCurrentShoe={setCurrentShoe}/>
     <div className="main-page">
-      <Sidebar shoes={shoes} currentShoe={currentShoe} setCurrentShoe={setCurrentShoe}/>  
-      <ShoeDetails currentShoe={currentShoe}/>   
+      <Sidebar shoes={shoes} currentShoe={currentShoe} setCurrentShoe={setCurrentShoe} />  
+      <ShoeDetails currentShoe={currentShoe} setCurrentShoe={setCurrentShoe}/>   
     </div>
     </>
   )
