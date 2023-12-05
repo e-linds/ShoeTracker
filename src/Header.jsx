@@ -7,9 +7,9 @@ function Header({ setShoes, shoes, setCurrentShoe }) {
         <div className="header">
             <p>Header this is a long name</p>
             <div className="topnav">
-                {/* <a href="http://localhost:5173/">Home</a>
-                <a href="http://localhost:5173/MileageAnalytics">Mileage Analytics</a>
-                <a href="http://localhost:5173/LocationAnalytics">Location Analytics</a> */}
+                <a href="http://localhost:5173/">Home</a>
+                <a href="http://localhost:5173/mileageanalytics">Mileage Analytics</a>
+                <a href="http://localhost:5173/LocationAnalytics">Location Analytics</a>
             </div>
             <AddNewShoe setShoes={setShoes} shoes={shoes} setCurrentShoe={setCurrentShoe}/>
         </div>

@@ -51,6 +51,22 @@
         "Boulder",
         "Breckenridge"
       ]
+    },
+    {
+      "id": 4,
+      "name": "test shoe",
+      "image": "./src/lasportivajackals.jpg",
+      "terrain": "Trail",
+      "miles": 400,
+      "notes": [
+        "toebox good size but shoe itself is too small",
+        "use runner's loop with these"
+      ],
+      "locations": [
+        "Denver",
+        "Boulder",
+        "Breckenridge"
+      ]
     }
   ]
 }
