@@ -4,8 +4,7 @@ import { Pie } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-
-
+ChartJS.defaults.color = "#fff"
 
 function MileageAnalytics({ shoes }) {
 
@@ -16,7 +15,6 @@ function MileageAnalytics({ shoes }) {
   const mileage = shoes.map((each) => {
     return each.miles  })
 
-  console.log(mileage)
 
   const data = {
     labels: labels,

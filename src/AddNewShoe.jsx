@@ -50,7 +50,7 @@ function AddNewShoe({ setShoes, shoes, setCurrentShoe }) {
         <>
         <button id="add-new-shoe-button" onClick={handleClickOpen}>Add New Shoe</button>
         <Dialog onClose={handleClickClose} open={openDialog}>
-            <DialogTitle>Add New Shoe</DialogTitle>
+            <DialogTitle id="add-new-shoe-form-title">Add New Shoe</DialogTitle>
             <form type="submit" id="add-new-form" onSubmit={(e) => handleSubmit(e)}>
                 <input name="name" placeholder="Name"></input>
                 <br></br>
@@ -65,7 +65,7 @@ function AddNewShoe({ setShoes, shoes, setCurrentShoe }) {
                 <br></br>
                 <input name="miles" placeholder="Lifetime Miles"></input>
                 <br></br>
-                <button type="submit" onClick={handleClickClose}>Add</button>
+                <button type="submit" onClick={handleClickClose} id="add-new-shoe-form-button">Add</button>
             </form>
         </Dialog>
         </>

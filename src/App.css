@@ -10,16 +10,19 @@
 .header {
   height: 100px;
   padding-top: 2rem;
+  /* padding-bottom: 2rem; */
   display: grid;
-  grid-template-columns: 45% 2fr 1fr;
-  padding-right: 2em;
+  grid-template-columns: 42% 2fr 1fr;
+  padding-right: 3em;
   background:#556b2f;
-  color: white
+  color: white;
+  align-items: center
 
 }
 
 .header button {
   height: 30px;
+  margin-right: 15px;
   font-family: Serif;
   font-size: 18px;
   border-radius: 4px;
@@ -28,15 +31,12 @@
 
 }
 
-/* .topnav {
-  display: grid
-} */
-
 .topnav * {
   padding: 15px;
   font-size: 20px;
   color: white;
   text-decoration: none; 
+  font-weight: 500
   /* align-items: center */
 }
 
@@ -54,7 +54,19 @@
   padding: 3px;
   margin: 10px;
   font-size: 15px;
-  border-radius: 3px;
+  border-radius: 5px
+
+}
+
+#add-new-shoe-form-title {
+  text-align: center
+}
+
+#add-new-shoe-form-button {
+  background: #e75480;
+  color: white;
+  border: none;
+  padding: 5px
 
 }
 
@@ -69,9 +81,11 @@
 .main-page {
   display: grid;
   gap: 3rem;
-  grid-template-columns: 10% 3fr 1fr;
+  grid-template-columns: 18% 2.5fr 1fr;
   padding-left: 2em;
   background-image: url("./boulderrunning.jpg");
+  background-attachment: fixed
+
  
 }
 
@@ -89,7 +103,7 @@
 } */
 
 .shoeblock * {
-  width: 90%;
+  width: 60%;
   min-width: 150px;
   float: left;
   border-radius: 4px;
@@ -97,7 +111,7 @@
 
 .shoedetails {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 2fr 3fr 2fr;
   /* grid-template-rows: 8fr 1fr; */
   gap: 10px;
   height: 50%;
@@ -107,7 +121,8 @@
   align-items: start;
   justify-items: center;
   margin-left: 15px;
-  max-width: 800px
+  max-width: 800px;
+  color: white
 
   /* border: solid;
   border-color: red;
@@ -134,18 +149,11 @@
   text-align: right
 }
 
-#locations-and-add-run {
-  text-align: left;
-  line-height: 50%
-}
-
 .shoedetails img {
   max-height: 400px;
   min-height: 300px;
   border-radius: 18px;
   max-width: 90%;
-  /* padding: 10px; */
-  /* float: left */
 }
 
 @media (max-width: 60em) {
@@ -154,32 +162,37 @@
   }
 }
 
-
-
-.add-new-run {
-  font-size: 20px;
-  padding: 3px;
-  margin: 5px;
-  border-radius: 4px;
-  border: none
-
+#notes-and-add-run {
+  text-align: left;
+  
 }
+
 
 .add-new-run * {
   font-size: 15px;
   padding: 3px;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   border-radius: 4px;
   float: left;
-  border: none
+  border: none;
 
 }
 
 #add-new-run-button {
   height: 35px;
   font-size: 15px;
-  margin-top: 20px
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  background: #e75480;
+  color: white 
 }
+
+
 
 
 #analytics-div {
@@ -190,6 +203,7 @@
   height: 100%;
   object-fit: cover;
   background-image: url(https://www.bolderboulder.com/wp-content/uploads/2023/05/UPDATEDBB_Web_Gallery_Start1.jpg);
+  background-attachment: fixed
 
 
 }
@@ -206,13 +220,12 @@
   max-width: 600px;
   align-items: center;
   margin-left: 150px;
-
+  margin-top: 70px
   
 }
 
 #pie-chart * {
-  width: 100%;
-  
+  width: 90%;  
 }
 
 #mileage-percentages-div {

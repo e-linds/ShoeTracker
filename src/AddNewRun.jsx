@@ -46,12 +46,12 @@ function AddNewRun({ currentShoe, setCurrentShoe }) {
     return(
 
         <form type="submit" onSubmit={handleSubmit} className="add-new-run">
-            <input name="new-location" placeholder="Add Location or Choose ->" value={addedLocation} onChange={(e) => setAddedLocation(e.target.value)}></input>
             <select>
                 {locations.map((each) => {
                     return <option>{each}</option>
                 })}
             </select>
+            <input name="new-location" placeholder="Add New Location" value={addedLocation} onChange={(e) => setAddedLocation(e.target.value)}></input>
             <input name="new-miles" placeholder="Miles" value={addedMiles} onChange={(e) => setAddedMiles(e.target.value)}></input>
             <button>Submit</button>
         </form>
