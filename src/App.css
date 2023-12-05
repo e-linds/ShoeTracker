@@ -2,8 +2,7 @@
 
 #root {
   /* max-width: 1280px; */
-  margin: 0 auto;
-  padding-top: 2rem;
+  /* margin: 0 auto; */
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-family: 'PT Sans', sans-serif
@@ -12,8 +11,11 @@
 
 .header {
   height: 100px;
+  padding-top: 2rem;
   display: grid;
-  grid-template-columns: 45% 2fr 1fr
+  grid-template-columns: 45% 2fr 1fr;
+  padding-right: 2em;
+  background:#556b2f
 
 
 }
@@ -57,8 +59,11 @@
 .main-page {
   display: grid;
   gap: 3rem;
-  grid-template-columns: 15% 70%;
-  padding-left: 2em
+  grid-template-columns: 10% 70%;
+  padding-left: 2em;
+  background-image: url("./boulderrunning.jpg");
+  /* max-width: 1280px; */
+  /* height: 1000px */
 }
 
 
@@ -75,6 +80,7 @@
   display: grid;
   gap: 2rem;
   grid-template-rows: repeat(5, 1fr);
+  padding-top: 50px
 
 }
 
@@ -96,6 +102,8 @@
   height: 50%;
   font-family: 'Lato', sans-serif;
   font-family: 'PT Sans', sans-serif;
+  padding-top: 50px
+
   /* border: solid;
   border-color: red;
   border-width: 2px */
