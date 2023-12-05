@@ -39,25 +39,9 @@
     {
       "id": 3,
       "name": "La Sportiva Jackals",
-      "image": "./src/lasportivajackals.jpg",
+      "image": "https://i0.wp.com/runoregonblog.com/wp-content/uploads/2022/04/la-sportiva.jpg?resize=768%2C1024&ssl=1",
       "terrain": "Trail",
       "miles": 278,
-      "notes": [
-        "toebox good size but shoe itself is too small",
-        "use runner's loop with these"
-      ],
-      "locations": [
-        "Denver",
-        "Boulder",
-        "Breckenridge"
-      ]
-    },
-    {
-      "id": 4,
-      "name": "test shoe",
-      "image": "./src/lasportivajackals.jpg",
-      "terrain": "Trail",
-      "miles": 400,
       "notes": [
         "toebox good size but shoe itself is too small",
         "use runner's loop with these"

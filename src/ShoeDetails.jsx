@@ -17,19 +17,20 @@ function ShoeDetails({ currentShoe, setCurrentShoe }) {
             <div id="complete-details">
                 <h2>{name}</h2>
                 <p>{terrain}</p>
-                <p>{miles ? `${miles} lifetime miles` : null}</p>
-                <h3>{currentShoe ? "Locations" : null}</h3>
-                <ul>{locations?.map((each) => {
-                    return <li>{each}</li>})}
-                </ul>   
+                <p>{miles ? `${miles} lifetime miles` : null}</p>   
                 <h3>{currentShoe ? "Notes" : null}</h3>
                 <ul>{notes?.map((each) => {
                     return <li>{each}</li>})}
                 </ul>    
             </div>
             <img src={image}/>
-            {currentShoe ? <button onClick={handleClick} className="add-new-run" id="add-new-run-button">Add Run</button> : null}
-            {addRunButton ? <AddNewRun currentShoe={currentShoe} setCurrentShoe={setCurrentShoe}/> : null}
+            <div id="locations-and-add-run">
+                <h3>{currentShoe ? "Locations" : null}</h3>
+                {locations?.map((each) => {
+                    return <p>{each}</p>})}
+                {currentShoe ? <button onClick={handleClick} className="add-new-run" id="add-new-run-button">Add Run</button> : null}
+                {addRunButton ? <AddNewRun currentShoe={currentShoe} setCurrentShoe={setCurrentShoe}/> : null}
+            </div>
         </div>
     )
 }

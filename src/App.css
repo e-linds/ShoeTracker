@@ -1,8 +1,6 @@
 
 
 #root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-family: 'PT Sans', sans-serif
@@ -15,8 +13,8 @@
   display: grid;
   grid-template-columns: 45% 2fr 1fr;
   padding-right: 2em;
-  background:#556b2f
-
+  background:#556b2f;
+  color: white
 
 }
 
@@ -30,25 +28,37 @@
 
 }
 
+/* .topnav {
+  display: grid
+} */
+
 .topnav * {
-  padding: 10px;
+  padding: 15px;
   font-size: 20px;
-  color: black;
-  text-decoration: none
+  color: white;
+  text-decoration: none; 
+  /* align-items: center */
 }
+
+#add-new-shoe-button {
+  background: #e75480;
+  color: white;
+  border: 0 solid #e5e7eb;
+  margin-left: 20px
+  /* filter: drop-shadow(0 0 .5px) */
+
+}
+
 
 #add-new-form * {
   padding: 3px;
   margin: 10px;
   font-size: 15px;
-  border-radius: 3px
-  
+  border-radius: 3px;
+
 }
 
-/* .header * {
-  border: solid;
-  border-color: green
-} */
+
 
 @media (max-width: 60em) {
   .header {
@@ -59,28 +69,18 @@
 .main-page {
   display: grid;
   gap: 3rem;
-  grid-template-columns: 10% 70%;
+  grid-template-columns: 10% 3fr 1fr;
   padding-left: 2em;
   background-image: url("./boulderrunning.jpg");
-  /* max-width: 1280px; */
-  /* height: 1000px */
+ 
 }
-
-
-
-/* .main-page * {
-  border: solid;
-  border-color: red
-
-} */
-
 
 
 #sidebar {
   display: grid;
-  gap: 2rem;
+  /* gap: 10px; */
   grid-template-rows: repeat(5, 1fr);
-  padding-top: 50px
+  padding-top: 50px;
 
 }
 
@@ -88,21 +88,26 @@
   margin-left: 20px
 } */
 
-.shoeblock img {
+.shoeblock * {
   width: 90%;
+  min-width: 150px;
   float: left;
   border-radius: 4px;
 }
 
 .shoedetails {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 8fr 1fr;
-  gap: 15px;
+  grid-template-columns: 1fr 2fr 1fr;
+  /* grid-template-rows: 8fr 1fr; */
+  gap: 10px;
   height: 50%;
   font-family: 'Lato', sans-serif;
   font-family: 'PT Sans', sans-serif;
-  padding-top: 50px
+  padding-top: 50px;
+  align-items: start;
+  justify-items: center;
+  margin-left: 15px;
+  max-width: 800px
 
   /* border: solid;
   border-color: red;
@@ -115,20 +120,32 @@
   border-width: 2px; */
   font-family: 'Lato', sans-serif;
   font-family: 'PT Sans', sans-serif;
+  list-style-type: none;
+
+}
+
+@media (max-width: 60em) {
+  #complete-details {
+    width: 50px
+  }
 }
 
 #complete-details * {
-  list-style-type: none;
   text-align: right
+}
 
+#locations-and-add-run {
+  text-align: left;
+  line-height: 50%
 }
 
 .shoedetails img {
-  height: 400px;
+  max-height: 400px;
+  min-height: 300px;
   border-radius: 18px;
   max-width: 90%;
-  padding: 10px;
-  float: le
+  /* padding: 10px; */
+  /* float: left */
 }
 
 @media (max-width: 60em) {
@@ -137,28 +154,31 @@
   }
 }
 
-/* #add-run-form {
-  grid-column-start: span 2;
-} */
+
 
 .add-new-run {
   font-size: 20px;
   padding: 3px;
   margin: 5px;
-  border-radius: 4px
+  border-radius: 4px;
+  border: none
 
 }
 
 .add-new-run * {
-  font-size: 20px;
+  font-size: 15px;
   padding: 3px;
   margin: 5px;
-  border-radius: 4px
+  border-radius: 4px;
+  float: left;
+  border: none
 
 }
 
 #add-new-run-button {
-  float: right
+  height: 35px;
+  font-size: 15px;
+  margin-top: 20px
 }
 
 
@@ -204,6 +224,7 @@
   margin-bottom: 100px;
   max-width: 200px;
   min-width: 200px;
+  text-align: left
 
   /* filter: drop-shadow(0 0 1px) */
 
