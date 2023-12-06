@@ -5,7 +5,7 @@ import AddNewShoe from "./AddNewShoe.jsx"
 function Header({ setShoes, shoes, setCurrentShoe }) {
     return(
         <div className="header">
-            <p>Header this is a long name</p>
+            <h1 id="shoetracker-logo">ShoeTracker</h1>
             <div className="topnav">
                 <a href="http://localhost:5173/">Home</a>
                 <a href="http://localhost:5173/mileageanalytics">Mileage Analytics</a>

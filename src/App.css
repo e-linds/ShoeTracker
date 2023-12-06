@@ -3,7 +3,8 @@
 #root {
   text-align: center;
   font-family: 'Lato', sans-serif;
-  font-family: 'PT Sans', sans-serif
+  font-family: 'PT Sans', sans-serif;
+  min-width: 860px
 }
 
 
@@ -20,7 +21,53 @@
 
 }
 
-.header button {
+@media (max-width: 1160px) {
+  .header {
+    grid-template-columns: 42% 1fr;
+    
+  }
+}
+
+#shoetracker-logo {
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Rubik Moonrocks', sans-serif;
+  font-size: 60px;
+  font-weight: 200;
+  margin: 0
+}
+
+@media (max-width: 1400px) {
+  #shoetracker-logo {
+    margin-left: 20px;
+    margin-right: 20px
+    }
+}
+
+.topnav {
+  display: flex
+}
+
+@media (max-width: 1160px) {
+  .topnav {
+    display: none
+  }
+}
+
+.topnav * {
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none; 
+  font-weight: 500;
+  flex-wrap: wrap
+
+}
+
+#add-new-shoe-button {
+  background: #e75480;
+  color: white;
+  border: 0 solid #e5e7eb;
+  margin-left: 20px;
   height: 30px;
   margin-right: 15px;
   font-family: Serif;
@@ -29,24 +76,14 @@
   font-family: 'Lato', sans-serif;
   font-family: 'PT Sans', sans-serif;
 
+
 }
 
-.topnav * {
-  padding: 15px;
-  font-size: 20px;
-  color: white;
-  text-decoration: none; 
-  font-weight: 500
-  /* align-items: center */
-}
-
-#add-new-shoe-button {
-  background: #e75480;
-  color: white;
-  border: 0 solid #e5e7eb;
-  margin-left: 20px
-  /* filter: drop-shadow(0 0 .5px) */
-
+@media (max-width: 1160px) {
+  #add-new-shoe-button {
+    width: 175px;
+    margin: auto
+    }
 }
 
 
@@ -70,13 +107,6 @@
 
 }
 
-
-
-@media (max-width: 60em) {
-  .header {
-    grid-template-columns: repeat(3, 1fr)
-  }
-}
 
 .main-page {
   display: grid;
@@ -123,42 +153,48 @@
   margin-left: 15px;
   max-width: 800px;
   color: white
+}
 
-  /* border: solid;
-  border-color: red;
-  border-width: 2px */
+@media (max-width: 60em) {
+  .shoedetails {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center
+  }
 }
 
 .shoedetails * {
-  /* border: solid;
-  border-color: red;
-  border-width: 2px; */
   font-family: 'Lato', sans-serif;
   font-family: 'PT Sans', sans-serif;
   list-style-type: none;
 
 }
 
-@media (max-width: 60em) {
-  #complete-details {
-    width: 50px
-  }
-}
-
 #complete-details * {
   text-align: right
 }
 
+
+@media (max-width: 60em) {
+  #complete-details * {
+    text-align: left !important;
+    padding: 0
+}
+}
+
+
 .shoedetails img {
-  max-height: 400px;
-  min-height: 300px;
+  /* max-height: 400px; */
+  /* min-height: 300px; */
   border-radius: 18px;
   max-width: 90%;
 }
 
+
 @media (max-width: 60em) {
   .shoedetails img {
-    display: none
+    max-width: 45%;
+
   }
 }
 

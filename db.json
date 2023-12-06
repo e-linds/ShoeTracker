@@ -15,7 +15,8 @@
         "Boulder",
         "Breckenridge",
         "New York City",
-        "Forthworth"
+        "Fort Worth",
+        "Chicago"
       ]
     },
     {
@@ -23,7 +24,7 @@
       "name": "Brooks Launch",
       "image": "https://u-mercari-images.mercdn.net/photos/m89825656917_4.jpg?width=1024&height=1024&format=pjpg&auto=webp&fit=crop&_=1691126062",
       "terrain": "Speed",
-      "miles": 232,
+      "miles": 236,
       "notes": [
         "smaller toebox",
         "feel nice on the treadmill"
@@ -33,7 +34,8 @@
         "Boulder",
         "Breckenridge",
         "New York City",
-        "Lakewood"
+        "Lakewood",
+        "Seattle"
       ]
     },
     {
