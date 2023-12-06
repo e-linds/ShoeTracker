@@ -11,9 +11,9 @@ function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
 
     function handleClick() {
         setAddRunButton(!addRunButton)
-
     }
 
+    let buttonText = addRunButton ? "Close" : "Add Run"
 
     function handleAddNote(e) {
         e.preventDefault()
@@ -50,8 +50,8 @@ function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
                 <p>{terrain}</p>
                 <p>{miles ? `${miles} lifetime miles` : null}</p>      
                 <h3>{currentShoe ? "Locations" : null}</h3>
-                {locations?.map((each) => {
-                    return <li>{each}</li>})}
+                {locations ? locations.map((each) => {
+                    return <li>{each}</li>}) : null}
             </div>
             <div id="img-and-delete">
                 <img src={image}/>
@@ -75,7 +75,7 @@ function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
                     : null
                     } 
                                        
-                {currentShoe ? <button onClick={handleClick} id="add-new-run-button">Add Run</button> : null}
+                {currentShoe ? <button onClick={handleClick} id="add-new-run-button">{buttonText}</button> : null}
                 {addRunButton ? <AddNewRun currentShoe={currentShoe} setCurrentShoe={setCurrentShoe}/> : null}
             </div>
         </div>

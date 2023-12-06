@@ -47,7 +47,7 @@ function MileageAnalytics({ shoes }) {
 
   return (
     <>
-    {/* <div id="background-pic"> */}
+    <div id="bolderboulderspacer">
     <div id="analytics-div">
     <div id="pie-chart">
       <Pie data={data}/>
@@ -66,7 +66,7 @@ function MileageAnalytics({ shoes }) {
           </div>
     </div>
     </div>
-    {/* </div> */}
+    </div>
     </>
     )
 }

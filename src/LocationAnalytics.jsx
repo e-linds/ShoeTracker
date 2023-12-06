@@ -2,7 +2,7 @@ import React from "react"
 
 function LocationAnalytics() {
     return(
-        <div>Location Analytics</div>
+        <div id="location-analytics">Location Analytics</div>
     )
 }
 

@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Header from "./Header.jsx"
 import ShoePage from "./ShoePage.jsx"
 import MileageAnalytics from "./MileageAnalytics.jsx"
+import LocationAnalytics from "./LocationAnalytics.jsx"
+
+
 
 
 function App() {
@@ -43,7 +46,12 @@ function App() {
         <Header setShoes={setShoes} shoes={shoes} setCurrentShoe={setCurrentShoe}/>
             <Routes> 
                 <Route path="/" element={<ShoePage shoes={shoes} currentShoe={currentShoe} setCurrentShoe={setCurrentShoe} deleteShoe={deleteShoe}/>}/>   
-                <Route path="/mileageanalytics" element={<MileageAnalytics shoes={shoes}/>}/>
+            </Routes>
+            <div id="bolderboulderspacer"></div>
+            <MileageAnalytics shoes={shoes}/>
+            <LocationAnalytics />
+            <Routes>
+                {/* <Route path="/mileageanalytics" element={<MileageAnalytics shoes={shoes}/>}/> */}
             </Routes>
     </BrowserRouter>
     

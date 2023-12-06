@@ -21,8 +21,8 @@ function AddNewShoe({ setShoes, shoes, setCurrentShoe }) {
             image: (e.target.image.value ? e.target.image.value : "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"),
             terrain: e.target.terrain.value.charAt(0).toUpperCase() + e.target.terrain.value.slice(1),
             miles: e.target.miles.value,
-            notes: ["placeholder"],
-            locations: ["placeholder"]        
+            notes: [],
+            locations: []        
         }
 
         if (newShoe.name) {

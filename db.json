@@ -61,11 +61,25 @@
       "name": "Hoka Clifton 9",
       "image": "https://roadrunnersports.widen.net/content/mfgd15ur83?w=1000&h=1000",
       "terrain": "Road",
-      "miles": "100",
+      "miles": 130,
       "id": 4,
       "notes": [
-        "race shoes!!! Love these. So cushy."
+        "race shoes!!! Love these. So cushy.",
+        "hey hey hey"
+      ],
+      "locations": [
+        "Denver",
+        "Lakewood"
       ]
+    },
+    {
+      "name": "New Balance Fresh Foam",
+      "image": "https://i.ebayimg.com/images/g/nYMAAOSwCxBkMlRH/s-l500.jpg",
+      "terrain": "Road",
+      "miles": "200",
+      "notes": [],
+      "locations": [],
+      "id": 5
     }
   ]
 }

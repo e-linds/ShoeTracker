@@ -9,15 +9,17 @@
 
 
 .header {
-  height: 100px;
-  padding-top: 2rem;
+  height: 140px;
+  /* padding-top: 2rem; */
   /* padding-bottom: 2rem; */
   display: grid;
   grid-template-columns: 42% 2fr 1fr;
   padding-right: 3em;
   background:#556b2f;
   color: white;
-  align-items: center
+  align-items: center;
+  filter: drop-shadow(0 2px 5px #3a3b3c)
+
 
 }
 
@@ -31,9 +33,10 @@
 #shoetracker-logo {
   font-family: 'PT Sans', sans-serif;
   font-family: 'Rubik Moonrocks', sans-serif;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 200;
-  margin: 0
+  margin: 0;
+  margin-top: 40px
 }
 
 @media (max-width: 1600px) {
@@ -44,7 +47,8 @@
 }
 
 .topnav {
-  display: flex
+  display: flex;
+  margin-bottom: 60px
 }
 
 @media (max-width: 1160px) {
@@ -59,7 +63,12 @@
   color: white;
   text-decoration: none; 
   font-weight: 500;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  transition: all 4s ease;
+}
+
+.topnav *:hover {
+  text-decoration: underline
 
 }
 
@@ -75,8 +84,15 @@
   border-radius: 4px;
   font-family: 'Lato', sans-serif;
   font-family: 'PT Sans', sans-serif;
+  transition: all .25s ease;
+  margin-bottom: 60px
 
 
+}
+
+#add-new-shoe-button:hover {
+  background: #c0345f;
+  
 }
 
 @media (max-width: 1160px) {
@@ -111,52 +127,47 @@
 .main-page {
   display: grid;
   gap: 3rem;
-  grid-template-columns: 18% 2.5fr 1fr;
-  padding-left: 2em;
+  grid-template-rows: 18% 2.5fr 1fr;
   background-image: url("./boulderrunning.jpg");
-  background-attachment: fixed
+  background-attachment: fixed;
+  justify-items: center;
+  height: 900px
 
  
 }
 
 
 #sidebar {
-  padding-top: 50px;
-
+  padding-right: 50px;
+  display: flex;
+  height: 300px;
+  align-items: flex-start
 }
 
 
 .shoeblock {
-  width: 60%;
-  min-width: 150px;
+  /* width: 40%; */
+  width: 100px;
   float: left;
   border-radius: 25px;
-  padding: 15px
+  padding: 20px;
 }
 
 .shoedetails {
-  display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
-  /* grid-template-rows: 8fr 1fr; */
-  gap: 10px;
-  height: 50%;
+  display: flex;
+  align-content: center;
   font-family: 'Lato', sans-serif;
   font-family: 'PT Sans', sans-serif;
-  padding-top: 50px;
+  margin-top: 50px;
+  gap: 30px;
   align-items: start;
   justify-items: center;
-  margin-left: 15px;
-  max-width: 800px;
+  max-width: 1000px;
+  min-width: 600px;
   color: white
 }
 
-@media (max-width: 60em) {
-  .shoedetails {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    text-align: center
-  }
-}
+
 
 .shoedetails * {
   font-family: 'Lato', sans-serif;
@@ -170,26 +181,16 @@
 }
 
 
-@media (max-width: 60em) {
-  #complete-details * {
-    text-align: left !important;
-    padding: 0
-}
+#img-and-delete {
+  text-align: center;
+  max-width: 400px
 }
 
 
 .shoedetails img {
-  /* max-height: 400px; */
-  /* min-height: 300px; */
   border-radius: 18px;
-  max-width: 90%;
-}
-
-
-@media (max-width: 60em) {
-  .shoedetails img {
-    max-width: 45%;
-  }
+  width: 100%;
+  align-items: center
 }
 
 #deletebutton {
@@ -197,12 +198,6 @@
   color: white;
   border-radius: 3px;
   border: none
-}
-
-@media (max-width: 60em) {
-  #deletebutton {
-    display: none
-  }
 }
 
 #notes-and-add-run {
@@ -230,8 +225,7 @@
 #add-note-button {
   background: #556b2f;
   color: white;
-  border: solid;
-  border-width:.5px;
+  border: none;
   border-radius: 4px;
   margin-left: 2px;
   
@@ -262,7 +256,11 @@
   color: white 
 }
 
-
+#bolderboulderspacer {
+  background-image: url(https://www.bolderboulder.com/wp-content/uploads/2023/05/UPDATEDBB_Web_Gallery_Start1.jpg);
+  background-attachment: fixed;
+  height: 500px
+}
 
 
 #analytics-div {
@@ -272,10 +270,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-image: url(https://www.bolderboulder.com/wp-content/uploads/2023/05/UPDATEDBB_Web_Gallery_Start1.jpg);
+  background-image: url("./boulderrunning.jpg");
   background-attachment: fixed
-
-
+  
 }
 
 @media (max-width: 60em) {
@@ -296,20 +293,22 @@
 
 #pie-chart * {
   width: 90%;  
+  filter: drop-shadow(0 1px 2px #3a3b3c)
+
 }
 
 #mileage-percentages-div {
   border: none;
   border-radius: 6px;
-  background: white;
+  background: #556b2f;
+  color: white;
   padding: 15px;
   margin-top: 100px;
   margin-bottom: 100px;
   max-width: 200px;
   min-width: 200px;
-  text-align: left
-
-  /* filter: drop-shadow(0 0 1px) */
+  text-align: left;
+  filter: drop-shadow(0 0 2px #3a3b3c)
 
 }
 
@@ -317,6 +316,10 @@
   #mileage-percentages-div {
     display: none
   }
+}
+
+#location-analytics {
+  height: 800px
 }
 
 
