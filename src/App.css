@@ -214,13 +214,27 @@
   color: white;
   border: none;
   border-radius: 4px;
-  width: 100%
+  width: 60%
 
 }
 
 #add-note-input::placeholder {
   color: white;
   font-size: 15px
+}
+
+#add-note-form * {
+  display: inline-block
+}
+
+#add-note-button {
+  background: #556b2f;
+  color: white;
+  border: solid;
+  border-width:.5px;
+  border-radius: 4px;
+  margin-left: 2px;
+  
 }
 
 

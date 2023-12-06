@@ -6,6 +6,7 @@ function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
     const {id, name, image, terrain, miles, notes, locations} = currentShoe
     const [addRunButton, setAddRunButton] = useState(false)
     const [notesUpdated, setnotesUpdated] = useState(false)
+    const [notesValue, setNotesValue] = useState("")
 
 
     function handleClick() {
@@ -13,12 +14,13 @@ function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
 
     }
 
+
     function handleAddNote(e) {
         e.preventDefault()
 
-        const newNote = e.target["add-note-input"].value
-
-        const updatedNotes = [...currentShoe.notes, newNote]
+        const updatedNotes = currentShoe.notes ? [...currentShoe.notes, notesValue] : [notesValue]
+         
+        if (notesValue) {
 
         currentShoe.notes = updatedNotes
 
@@ -34,8 +36,11 @@ function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
 
     //dummy state variable to trigger re-render
     setnotesUpdated(!notesUpdated)
+    setNotesValue("")
     
-    }
+            }
+
+        }
 
 
     return(
@@ -57,9 +62,15 @@ function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
                 {notes?.map((each) => {
                         return <p>👟{each}</p>})} 
                 {currentShoe ? 
-                    <form onSubmit={handleAddNote}>
-                        <input id="add-note-input" name="add-note-input" placeholder="👟 Add Note"></input> 
-                        <button id="submit-new-note" type="submit">Go</button> 
+                    <form id="add-note-form" onSubmit={handleAddNote}>
+                        <input 
+                        id="add-note-input" 
+                        name="add-note-input" 
+                        placeholder="👟 Add Note" 
+                        value={notesValue} 
+                        onChange={(e) => setNotesValue(e.target.value)}>
+                        </input>
+                        <button id="add-note-button" type="submit">Go</button> 
                     </form>
                     : null
                     } 
