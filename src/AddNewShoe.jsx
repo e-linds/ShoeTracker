@@ -20,9 +20,7 @@ function AddNewShoe({ setShoes, shoes, setCurrentShoe }) {
             name: e.target.name.value.charAt(0).toUpperCase() + e.target.name.value.slice(1),
             image: (e.target.image.value ? e.target.image.value : "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"),
             terrain: e.target.terrain.value.charAt(0).toUpperCase() + e.target.terrain.value.slice(1),
-            miles: e.target.miles.value,
-            notes: e.target.notes.value,
-            locations: e.target.locations.value
+            miles: e.target.miles.value        
         }
 
         if (newShoe.name) {
@@ -35,15 +33,19 @@ function AddNewShoe({ setShoes, shoes, setCurrentShoe }) {
             body: JSON.stringify(newShoe)
         })
         .then(r => r.json())
-        .then(data => setShoes(shoes, data), setCurrentShoe(newShoe)
+        .then(data => setShoes([...shoes, data]), setCurrentShoe(newShoe)
         
         )
 
+
+
+       
+
+      setShoes([...shoes, newShoe])
+
     }
 
-
     }
-
 
 
     return(

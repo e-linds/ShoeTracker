@@ -17,13 +17,32 @@ function App() {
 
   }, [])
 
+  function deleteShoe (shoeId) {
+    
+    const newArray = shoes.filter((each) => {
+      return each.id !== shoeId
+    })
+
+    const firstShoe = shoes.filter((each) => {
+      return each.id === 1
+    })
+
+    fetch(`http://localhost:3000/shoes/${shoeId}`, {
+      method: "DELETE"
+    })
+
+    setShoes(newArray)
+    setCurrentShoe("")
+
+  }
+
 
   return (
     
     <BrowserRouter>
         <Header setShoes={setShoes} shoes={shoes} setCurrentShoe={setCurrentShoe}/>
             <Routes> 
-                <Route path="/" element={<ShoePage shoes={shoes} currentShoe={currentShoe} setCurrentShoe={setCurrentShoe}/>}/>   
+                <Route path="/" element={<ShoePage shoes={shoes} currentShoe={currentShoe} setCurrentShoe={setCurrentShoe} deleteShoe={deleteShoe}/>}/>   
                 <Route path="/mileageanalytics" element={<MileageAnalytics shoes={shoes}/>}/>
             </Routes>
     </BrowserRouter>

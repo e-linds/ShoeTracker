@@ -53,6 +53,13 @@
         "Boulder",
         "Breckenridge"
       ]
+    },
+    {
+      "name": "Hoka Clifton 9",
+      "image": "https://roadrunnersports.widen.net/content/mfgd15ur83?w=1000&h=1000",
+      "terrain": "Road",
+      "miles": "100",
+      "id": 4
     }
   ]
 }

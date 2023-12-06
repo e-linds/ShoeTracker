@@ -3,6 +3,7 @@ import ShoeBlock from "./ShoeBlock.jsx"
 
 function Sidebar({ shoes, currentShoe, setCurrentShoe }) {
 
+
     return (
 
     <div id="sidebar">
@@ -16,14 +17,8 @@ function Sidebar({ shoes, currentShoe, setCurrentShoe }) {
             setCurrentShoe={setCurrentShoe}
             />
         })} 
-
     </div>
     )
-
-
-
-
-
 
 }
 

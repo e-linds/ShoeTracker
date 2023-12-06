@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import AddNewRun from "./AddNewRun"
 
-function ShoeDetails({ currentShoe, setCurrentShoe }) {
-    const {name, image, terrain, miles, notes, locations} = currentShoe
+function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
+    const {id, name, image, terrain, miles, notes, locations} = currentShoe
     const [addRunButton, setAddRunButton] = useState(false)
-    const [buttonColor, setButtonColor] = useState("white")
 
     
 
@@ -24,7 +23,10 @@ function ShoeDetails({ currentShoe, setCurrentShoe }) {
                 {locations?.map((each) => {
                     return <li>{each}</li>})}
             </div>
-            <img src={image}/>
+            <div id="img-and-delete">
+                <img src={image}/>
+                {currentShoe ? <button id="deletebutton" onClick={() => deleteShoe(id)}>Delete Shoe</button> : null}
+            </div>
             <div id="notes-and-add-run">
                 <h3>{currentShoe ? "Notes" : null}</h3>
                 {notes?.map((each) => {
