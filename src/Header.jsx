@@ -11,7 +11,7 @@ function Header({ setShoes, shoes, setCurrentShoe }) {
             <div className="topnav">
                 <Link to="/home">Home</Link>
                 <Link to="/home#all-analytics">Analytics</Link>
-                <Link to="/home#location-analytics-div">Location Analytics</Link>
+                <Link to="/home#fun-stuff-div">Other Fun Stuff</Link>
             </div>
             <AddNewShoe setShoes={setShoes} shoes={shoes} setCurrentShoe={setCurrentShoe}/>
         </div>

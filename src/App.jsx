@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Header from "./Header.jsx"
 import ShoePage from "./ShoePage.jsx"
 import Analytics from "./Analytics.jsx"
-import LocationAnalytics from "./LocationAnalytics.jsx"
+import OtherFunStuff from "./OtherFunStuff.jsx"
 
 
 
@@ -54,7 +54,7 @@ function App() {
             </Routes>     
             <div id="spacer2"></div>
             <Routes>
-                <Route path="/home" element={<LocationAnalytics shoes={shoes}/>}/>
+                <Route path="/home" element={<OtherFunStuff shoes={shoes}/>}/>
             </Routes>       
             
             

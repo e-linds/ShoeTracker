@@ -106,7 +106,8 @@ const options = {
               <div id="pie-chart">
                   <Pie data={pieChartData}/>
               </div>
-              <div className="details-box" id="details-box-piechart">The chart to the left displays the number of miles run per shoe.
+              <div className="details-box" id="details-box-piechart">
+                <p className="details-box-header">{"⬅️ Lifetime miles per shoe"}</p>
                 <p className="resources-list"><strong>Resources:</strong>
                   <br></br>
                   <a href="https://www.rei.com/learn/expert-advice/replace-shoes.html">REI</a>
@@ -116,7 +117,8 @@ const options = {
                   <a href="https://treadlabs.com/blogs/insoles-reach-your-stride/34786373-what-are-your-running-shoes-trying-to-tell-you">TreadLabs</a>
                 </p>
               </div>
-              <div className="details-box" id="details-box-barchart">The chart to the right displays the number of locations run per shoe.
+              <div className="details-box" id="details-box-barchart">
+              <p className="details-box-header">{"Number of locations run in per shoe ➡️"}</p>
               <p className="resources-list"><strong>Resources:</strong>
                   <br></br>
                   <a href="https://www.runnersworld.com/news/a20859873/these-are-the-top-running-cities-according-to-strava/">Runner's World: Cities with most runners</a>

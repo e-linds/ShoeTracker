@@ -89,5 +89,49 @@
       "locations": [],
       "id": 5
     }
+  ],
+  "races": [
+    {
+      "id": 1,
+      "name": "Colfax Marathon",
+      "location": "Denver",
+      "season": "Spring",
+      "website": "https://www.runcolfax.org/"
+    },
+    {
+      "id": 2,
+      "name": "NYC Marathon",
+      "location": "NYC",
+      "season": "Fall",
+      "website": "https://www.nyrr.org/tcsnycmarathon"
+    },
+    {
+      "id": 3,
+      "name": "Detroit International Marathon",
+      "location": "Detroit",
+      "season": "Winter",
+      "website": "https://www.freepmarathon.com/"
+    },
+    {
+      "id": 4,
+      "name": "Miami Marathon",
+      "location": "Miami",
+      "season": "Winter",
+      "website": "https://www.themiamimarathon.com/marathon/"
+    }
+  ],
+  "gear": [
+    {
+      "id": 1,
+      "name": "Solomon Hand Water Bottle",
+      "image": "https://www.outdoorsinc.com/cdn/shop/products/lc1302900_u3zfwj3f62gvdbwz.jpg?v=1657290101&width=713",
+      "notes": "I love this thing, seals well and holds a lot of water without being heavy"
+    },
+    {
+      "id": 2,
+      "name": "Under Armor Lined Running tights",
+      "image": "https://underarmour.scene7.com/is/image/Underarmour/V5-1369771-001_BC_MAIN?rp=standard-0pad%7CpdpMainDesktop&scl=1&fmt=jpg&qlt=75&resMode=sharp2&cache=on%2Con&bgc=F0F0F0&wid=566&hei=708&size=566%2C708",
+      "notes": "Had these for a long time, they're getting worn but still wearable - tight enough to not slip"
+    }
   ]
 }

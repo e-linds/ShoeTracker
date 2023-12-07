@@ -66,15 +66,14 @@ function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
                         <input 
                         id="add-note-input" 
                         name="add-note-input" 
-                        placeholder="👟 Add Note" 
+                        placeholder="👟 Enter New Note" 
                         value={notesValue} 
                         onChange={(e) => setNotesValue(e.target.value)}>
                         </input>
-                        <button id="add-note-button" type="submit">Go</button> 
+                        <button id="add-note-button" type="submit"></button> 
                     </form>
                     : null
-                    } 
-                                       
+                    }                      
                 {currentShoe ? <button onClick={handleClick} id="add-new-run-button">{buttonText}</button> : null}
                 {addRunButton ? <AddNewRun currentShoe={currentShoe} setCurrentShoe={setCurrentShoe}/> : null}
             </div>
