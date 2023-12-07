@@ -1,9 +1,14 @@
 import React from "react"
 
-function LocationAnalytics() {
-    return(
-        <div id="location-analytics">Location Analytics</div>
+
+
+function LocationAnalytics({ shoes }) {
+  
+
+  return(<div>hello</div>
+        
     )
 }
+
 
 export default LocationAnalytics

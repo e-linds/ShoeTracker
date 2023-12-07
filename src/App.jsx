@@ -3,8 +3,9 @@ import './App.css'
 import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Header from "./Header.jsx"
 import ShoePage from "./ShoePage.jsx"
-import MileageAnalytics from "./MileageAnalytics.jsx"
+import Analytics from "./Analytics.jsx"
 import LocationAnalytics from "./LocationAnalytics.jsx"
+
 
 
 
@@ -20,14 +21,14 @@ function App() {
 
   }, [])
 
+  const firstShoe = (shoes.filter((each) => {
+    return each.id === 1
+  }))[0]
+
   function deleteShoe (shoeId) {
     
     const newArray = shoes.filter((each) => {
       return each.id !== shoeId
-    })
-
-    const firstShoe = shoes.filter((each) => {
-      return each.id === 1
     })
 
     fetch(`http://localhost:3000/shoes/${shoeId}`, {
@@ -45,14 +46,18 @@ function App() {
     <BrowserRouter>
         <Header setShoes={setShoes} shoes={shoes} setCurrentShoe={setCurrentShoe}/>
             <Routes> 
-                <Route path="/" element={<ShoePage shoes={shoes} currentShoe={currentShoe} setCurrentShoe={setCurrentShoe} deleteShoe={deleteShoe}/>}/>   
+                <Route path="/home" element={<ShoePage shoes={shoes} currentShoe={currentShoe} setCurrentShoe={setCurrentShoe} deleteShoe={deleteShoe}/>}/>   
             </Routes>
             <div id="bolderboulderspacer"></div>
-            <MileageAnalytics shoes={shoes}/>
-            <LocationAnalytics />
             <Routes>
-                {/* <Route path="/mileageanalytics" element={<MileageAnalytics shoes={shoes}/>}/> */}
-            </Routes>
+                <Route path="/home" element={<Analytics shoes={shoes}/>}/>
+            </Routes>     
+            <div id="spacer2"></div>
+            <Routes>
+                <Route path="/home" element={<LocationAnalytics shoes={shoes}/>}/>
+            </Routes>       
+            
+            
     </BrowserRouter>
     
   )

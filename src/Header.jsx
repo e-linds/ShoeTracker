@@ -1,5 +1,7 @@
 import React from "react"
 import AddNewShoe from "./AddNewShoe.jsx"
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 
 function Header({ setShoes, shoes, setCurrentShoe }) {
@@ -7,9 +9,9 @@ function Header({ setShoes, shoes, setCurrentShoe }) {
         <div className="header">
             <h1 id="shoetracker-logo">ShoeTracker</h1>
             <div className="topnav">
-                <a href="http://localhost:5173/">Home</a>
-                <a href="http://localhost:5173/mileageanalytics">Mileage Analytics</a>
-                <a href="http://localhost:5173/LocationAnalytics">Location Analytics</a>
+                <Link to="/home">Home</Link>
+                <Link to="/home#all-analytics">Analytics</Link>
+                <Link to="/home#location-analytics-div">Location Analytics</Link>
             </div>
             <AddNewShoe setShoes={setShoes} shoes={shoes} setCurrentShoe={setCurrentShoe}/>
         </div>

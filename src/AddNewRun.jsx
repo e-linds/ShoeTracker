@@ -5,7 +5,7 @@ function AddNewRun({ currentShoe, setCurrentShoe }) {
     const [addedMiles, setAddedMiles] = useState("")
     const [addedLocation, setAddedLocation] = useState("")
 
-
+console.log(locations)
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -45,12 +45,13 @@ function AddNewRun({ currentShoe, setCurrentShoe }) {
     return(
 
         <form type="submit" onSubmit={handleSubmit} className="add-new-run">
-            {locations ? 
+            {locations.length > 0 ? 
             <select> {locations.map((each) => <option>{each}</option>)} </select>
             :
             null} 
             <input name="new-location" placeholder="Add New Location" value={addedLocation} onChange={(e) => setAddedLocation(e.target.value)}></input>
             <input name="new-miles" placeholder="Miles" value={addedMiles} onChange={(e) => setAddedMiles(e.target.value)}></input>
+            <br></br>
             <button>Submit</button>
         </form>
 

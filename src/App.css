@@ -107,8 +107,19 @@
   padding: 3px;
   margin: 10px;
   font-size: 15px;
-  border-radius: 5px
+  border-radius: 5px;
+  border: solid;
+  border-width: 2px;
+  border-color: gray
 
+}
+
+#add-new-form *:hover {
+  filter: drop-shadow(0 0 .75px)
+}
+
+#terrain-select {
+  color: gray
 }
 
 #add-new-shoe-form-title {
@@ -119,8 +130,14 @@
   background: #e75480;
   color: white;
   border: none;
-  padding: 5px
+  padding: 5px;
+  transition: all .25s ease;
 
+}
+
+#add-new-shoe-form-button:hover {
+  background: #c0345f;
+  
 }
 
 
@@ -153,6 +170,10 @@
   padding: 20px;
 }
 
+.shoeblock:hover {
+  opacity: .75
+}
+
 .shoedetails {
   display: flex;
   align-content: center;
@@ -173,6 +194,11 @@
   font-family: 'Lato', sans-serif;
   font-family: 'PT Sans', sans-serif;
   list-style-type: none;
+
+}
+
+#complete-details {
+  width: 250px
 
 }
 
@@ -202,6 +228,7 @@
 
 #notes-and-add-run {
   text-align: left;
+  width: 250px
 }
 
 #add-note-input {
@@ -259,40 +286,70 @@
 #bolderboulderspacer {
   background-image: url(https://www.bolderboulder.com/wp-content/uploads/2023/05/UPDATEDBB_Web_Gallery_Start1.jpg);
   background-attachment: fixed;
-  height: 500px
+  height: 400px
 }
 
 
 #analytics-div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 150px;
-  width: 100%;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  justify-content: center;
   height: 100%;
-  object-fit: cover;
   background-image: url("./boulderrunning.jpg");
   background-attachment: fixed
   
 }
 
-@media (max-width: 60em) {
-  #analytics-div {
-    margin-left: 100px;
+#charts {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 60px;
+  /* max-width: 800px */
 
-  }
 }
+
+.details-box {
+  height: 50%;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(0,0,0,.3);
+
+
+}
+
+#details-box-piechart {
+  text-align: left;
+  margin-bottom: 20px
+}
+
+#details-box-barchart {
+  text-align: right;
+  margin-top: 20px;
+  
+}
+
+.resources-list * {
+  text-decoration: none;
+  color: white
+}
+
 
 #pie-chart {
   display: grid;
-  max-width: 600px;
+  /* max-width: 600px; */
   align-items: center;
-  margin-left: 150px;
-  margin-top: 70px
   
 }
 
 #pie-chart * {
-  width: 90%;  
+  /* width: 100%;   */
   filter: drop-shadow(0 1px 2px #3a3b3c)
 
 }
@@ -318,9 +375,34 @@
   }
 }
 
-#location-analytics {
-  height: 800px
+
+#analytics-title {
+  height: 150px;
+  text-align: left;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  font-weight: 200;
+  font-size: 50px;
+  background: #001f3f;
+  margin: 0;
+  color: white;
+  display: flex;
+  align-items: end
 }
+
+#barchart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+}
+
+#spacer2 {
+  height: 300px;
+  background: #001f3f;
+}
+
 
 
 

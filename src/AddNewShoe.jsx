@@ -60,7 +60,7 @@ function AddNewShoe({ setShoes, shoes, setCurrentShoe }) {
                 <br></br>
                 <input name="image" placeholder="Image"></input>
                 <br></br>
-                <select name="terrain" placeholder="Terrain">
+                <select name="terrain" id="terrain-select">
                     <option>All-Terrain</option>
                     <option>Road</option>
                     <option>Trail</option>

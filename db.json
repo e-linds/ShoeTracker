@@ -5,11 +5,12 @@
       "name": "Hoka Clifton 7",
       "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ0rv2yDuzLgXFeOOK1zm_HkLzFHqXyMLfH9Oq3b17Fu7mWpXAxSeEizgA6YPdugjM8aD2olTdJDGktZZ3w3WBSsF9R52uwQw4DYh8sMxDu",
       "terrain": "All-terrain",
-      "miles": 218,
+      "miles": 236,
       "notes": [
         "quite flat on the sole",
         "blisters on inside big toe",
-        "test"
+        "test",
+        "for some reason these make my right hip sore...not sure why"
       ],
       "locations": [
         "Denver",
@@ -17,7 +18,11 @@
         "Breckenridge",
         "New York City",
         "Fort Worth",
-        "Chicago"
+        "Chicago",
+        "",
+        "",
+        "",
+        ""
       ]
     },
     {
@@ -65,7 +70,8 @@
       "id": 4,
       "notes": [
         "race shoes!!! Love these. So cushy.",
-        "hey hey hey"
+        "hey hey hey",
+        "hello there what's up"
       ],
       "locations": [
         "Denver",
@@ -77,7 +83,9 @@
       "image": "https://i.ebayimg.com/images/g/nYMAAOSwCxBkMlRH/s-l500.jpg",
       "terrain": "Road",
       "miles": "200",
-      "notes": [],
+      "notes": [
+        "very roomy toebox, almost too much"
+      ],
       "locations": [],
       "id": 5
     }
