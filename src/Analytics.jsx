@@ -107,7 +107,7 @@ const options = {
                   <Pie data={pieChartData}/>
               </div>
               <div className="details-box" id="details-box-piechart">The chart to the left displays the number of miles run per shoe.
-                <p className="resources-list">Resources:
+                <p className="resources-list"><strong>Resources:</strong>
                   <br></br>
                   <a href="https://www.rei.com/learn/expert-advice/replace-shoes.html">REI</a>
                   <br></br>
@@ -117,7 +117,7 @@ const options = {
                 </p>
               </div>
               <div className="details-box" id="details-box-barchart">The chart to the right displays the number of locations run per shoe.
-              <p className="resources-list">Resources:
+              <p className="resources-list"><strong>Resources:</strong>
                   <br></br>
                   <a href="https://www.runnersworld.com/news/a20859873/these-are-the-top-running-cities-according-to-strava/">Runner's World: Cities with most runners</a>
                   <br></br>
