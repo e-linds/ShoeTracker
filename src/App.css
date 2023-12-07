@@ -290,10 +290,11 @@
 }
 
 
+
 #analytics-div {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 50px;
+  gap: 70px;
   justify-content: center;
   height: 100%;
   background-image: url("./boulderrunning.jpg");
@@ -306,11 +307,12 @@
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  justify-items: center;
-  align-items: center;
+  justify-items: stretch;
+  align-items: stretch;
   margin-top: 40px;
   margin-left: 60px;
-  /* max-width: 800px */
+  min-width: 1000px;
+  max-width: 55%
 
 }
 
@@ -321,7 +323,8 @@
   border-radius: 15px;
   background: rgba(0,0,0,.3);
   color: white;
-  line-height: 1.6
+  line-height: 1.6;
+
 
 
 
@@ -329,10 +332,15 @@
 
 #details-box-piechart {
   text-align: left;
+  margin-top: 50px
+
 }
 
 #details-box-barchart {
   text-align: right;
+  margin-top: 60px;
+  margin-left: 70px
+
   
 }
 
@@ -343,8 +351,8 @@
 
 
 
-#pie-chart * {
-  width: 100%;  
+#pie-chart {
+  width: 80%;  
 }
 
 #mileage-percentages-div {
@@ -384,7 +392,11 @@
 }
 
 #barchart {
-  margin-left:10px
+  margin-left:10px;
+}
+
+#barchart * {
+  width: 100%
 }
 
 #spacer2 {
