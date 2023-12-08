@@ -10,7 +10,7 @@ console.log(locations)
     function handleSubmit(e) {
         e.preventDefault()
 
-        if (e.target["new-miles"].value) {
+        if (e.target["new-miles"].value && e.target["new-location"].value) {
 
         const newMiles = parseInt(currentShoe.miles) + parseInt(addedMiles)
 
@@ -51,8 +51,7 @@ console.log(locations)
             null} 
             <input name="new-location" placeholder="Add New Location" value={addedLocation} onChange={(e) => setAddedLocation(e.target.value)}></input>
             <input name="new-miles" placeholder="Miles" value={addedMiles} onChange={(e) => setAddedMiles(e.target.value)}></input>
-            <br></br>
-            <button>Submit</button>
+            <button id="add-new-run-submit-button">Submit</button>
         </form>
 
 )}

@@ -8,6 +8,7 @@ function OtherFunStuff() {
   const [gear, setGear] = useState([])
   const [newRaceButton, setNewRaceButton] = useState(false)
   const [newGearButton, setNewGearButton] = useState(false)
+  const [somethingChanged, setSomethingChanged] = useState(false)
 
 
   useEffect(() => {
@@ -85,8 +86,25 @@ function OtherFunStuff() {
 
   }
 
+
+  function deleteItem (itemId, originalArray) {
+    const newArray = originalArray.filter((each) => {
+      return each.id !== itemId
+    })
+
+    const arrayString = originalArray === races ? "races" : "gear"
+
+    fetch(`http://localhost:3000/${arrayString}/${itemId}`, {
+      method: "DELETE"
+    })
+
+    originalArray === "races" ? setRaces(newArray) : setGear(newArray)
+
+    setSomethingChanged(!somethingChanged)
+
+  }
+
  
-  
 
   return(
       <div id="fun-stuff-div">
@@ -121,11 +139,14 @@ function OtherFunStuff() {
                 {gear.map((each) => {
                   return <GearCard 
                   key={each.id}
+                  id={each.id}
                   name={each.name}
                   image={each.image}
                   notes={each.notes}
                   gear={gear}
-                  setGear={setGear}           
+                  setGear={setGear}       
+                  deleteItem={deleteItem}         
+    
                   />
                 })}
             </div> 
@@ -138,12 +159,14 @@ function OtherFunStuff() {
                 {races.map((each) => {
                   return <RaceCard 
                   key={each.id}
+                  id={each.id}
                   name={each.name}
                   location={each.location}
                   season={each.season}
                   website={each.website} 
                   races={races}
-                  setRaces={setRaces}           
+                  setRaces={setRaces}  
+                  deleteItem={deleteItem}         
                   />
                 })}
             </div>    
