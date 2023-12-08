@@ -7,9 +7,6 @@ import Analytics from "./Analytics.jsx"
 import OtherFunStuff from "./OtherFunStuff.jsx"
 
 
-
-
-
 function App() {
   const [shoes, setShoes] = useState([])
   const [currentShoe, setCurrentShoe] = useState("")
@@ -21,9 +18,7 @@ function App() {
 
   }, [])
 
-  const firstShoe = (shoes.filter((each) => {
-    return each.id === 1
-  }))[0]
+  
 
   function deleteShoe (shoeId) {
     

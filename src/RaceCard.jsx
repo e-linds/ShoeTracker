@@ -1,6 +1,6 @@
 import React from "react"
 
-function RaceCard({ races, id, name, location, season, website, deleteItem }) {
+function RaceCard({ races, id, name, location, season, website, deleteRace }) {
 
     return(
         <div id="race-card-container">
@@ -9,7 +9,7 @@ function RaceCard({ races, id, name, location, season, website, deleteItem }) {
                 <p>{location} | {season}</p>
                 <a href={website}>Learn More</a>
             </div> 
-            <button className="delete-fun-stuff" id="delete-race" onClick={() => deleteItem(id, races)}>X</button>
+            <button className="delete-fun-stuff" id="delete-race" onClick={() => deleteRace(id)}>X</button>
         </div>
     )
 }

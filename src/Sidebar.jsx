@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ShoeBlock from "./ShoeBlock.jsx"
 
+//top bar of shoe images
 function Sidebar({ shoes, currentShoe, setCurrentShoe }) {
 
 

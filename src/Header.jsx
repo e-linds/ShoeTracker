@@ -3,7 +3,7 @@ import AddNewShoe from "./AddNewShoe.jsx"
 import { HashLink as Link } from 'react-router-hash-link';
 
 
-
+//hashlink import above allows routes to transfer user to different location on the same page, rather than loading a new page
 function Header({ setShoes, shoes, setCurrentShoe }) {
     return(
         <div className="header">

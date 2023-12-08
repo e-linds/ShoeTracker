@@ -148,7 +148,6 @@
   background-attachment: fixed;
   justify-items: center;
   height: 900px
-
  
 }
 
@@ -289,7 +288,6 @@
 }
 
 
-
 #analytics-div {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -316,9 +314,11 @@
 }
 
 .details-box {
-  height: 50%;
+  height: 60%;
   width: 300px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   border-radius: 15px;
   background: rgba(0,0,0,.3);
   color: white;
@@ -328,11 +328,11 @@
 
 .details-box-header {
   color: white;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 600;
   background: #001f3f;
   border-radius: 2px;
-  padding: 2px
+  padding: 4px
 }
 
 #details-box-piechart {
@@ -415,13 +415,13 @@
   grid-template-columns: 1fr 1fr;
   gap: 75px;
   background-image: url("./boulderrunning.jpg");
-  background-attachment: fixed
+  background-attachment: fixed;
+  min-width: 1000px
 }
 
 #fun-stuff-header {
   display: grid;
   grid-template-columns: 1fr 1fr 60%;
-  /* grid-template-rows: 2fr 1fr; */
   align-items: center;
   background: #001f3f;
   color: white;
@@ -479,7 +479,8 @@
   color:white;
   border-radius: 20px;
   height: 800px;
-  justify-content: start
+  justify-content: start;
+  align-items: center
 }
 
 #race-card-container {

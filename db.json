@@ -5,7 +5,7 @@
       "name": "Hoka Clifton 7",
       "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ0rv2yDuzLgXFeOOK1zm_HkLzFHqXyMLfH9Oq3b17Fu7mWpXAxSeEizgA6YPdugjM8aD2olTdJDGktZZ3w3WBSsF9R52uwQw4DYh8sMxDu",
       "terrain": "All-terrain",
-      "miles": 236,
+      "miles": 241,
       "notes": [
         "quite flat on the sole",
         "for some reason these make my right hip sore...not sure why"
@@ -16,7 +16,8 @@
         "Breckenridge",
         "New York City",
         "Fort Worth",
-        "Chicago"
+        "Chicago",
+        "RMNP"
       ]
     },
     {
@@ -58,14 +59,16 @@
       "name": "Hoka Clifton 9",
       "image": "https://roadrunnersports.widen.net/content/mfgd15ur83?w=1000&h=1000",
       "terrain": "Road",
-      "miles": 130,
+      "miles": 135,
       "id": 4,
       "notes": [
-        "race shoes!!! Love these. So cushy."
+        "race shoes!!! Love these. So cushy.",
+        "my favorite shoes"
       ],
       "locations": [
         "Denver",
-        "Lakewood"
+        "Lakewood",
+        "San Diego"
       ]
     },
     {
@@ -122,6 +125,12 @@
       "name": "Under Armor Lined Running tights",
       "image": "https://underarmour.scene7.com/is/image/Underarmour/V5-1369771-001_BC_MAIN?rp=standard-0pad%7CpdpMainDesktop&scl=1&fmt=jpg&qlt=75&resMode=sharp2&cache=on%2Con&bgc=F0F0F0&wid=566&hei=708&size=566%2C708",
       "notes": "Had these for a long time, they're getting worn but still wearable - tight enough to not slip"
+    },
+    {
+      "name": "Gaiam Foam Roller",
+      "image": "https://target.scene7.com/is/image/Target/GUEST_981c02ff-ea95-41ae-b728-46259c06f31d?wid=1200&hei=1200&qlt=80&fmt=webp",
+      "notes": "Does the job but the texture is a bit painful - difficult to travel with",
+      "id": 3
     }
   ]
 }

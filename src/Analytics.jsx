@@ -107,25 +107,25 @@ const options = {
                   <Pie data={pieChartData}/>
               </div>
               <div className="details-box" id="details-box-piechart">
-                <p className="details-box-header">{"⬅️ Lifetime miles per shoe"}</p>
+                <p className="details-box-header">{"⬅️ Lifetime miles per shoe "}</p>
                 <p className="resources-list"><strong>Resources:</strong>
                   <br></br>
-                  <a href="https://www.rei.com/learn/expert-advice/replace-shoes.html">REI</a>
+                  <a href="https://www.rei.com/learn/expert-advice/replace-shoes.html" target="_blank">REI</a>
                   <br></br>
-                  <a href="https://marathonhandbook.com/when-to-replace-running-shoes/">Marathon Handbook</a>
+                  <a href="https://marathonhandbook.com/when-to-replace-running-shoes/" target="_blank">Marathon Handbook</a>
                   <br></br>
-                  <a href="https://treadlabs.com/blogs/insoles-reach-your-stride/34786373-what-are-your-running-shoes-trying-to-tell-you">TreadLabs</a>
+                  <a href="https://treadlabs.com/blogs/insoles-reach-your-stride/34786373-what-are-your-running-shoes-trying-to-tell-you" target="_blank">TreadLabs</a>
                 </p>
               </div>
               <div className="details-box" id="details-box-barchart">
-              <p className="details-box-header">{"Number of locations run in per shoe ➡️"}</p>
+              <p className="details-box-header">{" Number of locations run in per shoe ➡️"}</p>
               <p className="resources-list"><strong>Resources:</strong>
                   <br></br>
-                  <a href="https://www.runnersworld.com/news/a20859873/these-are-the-top-running-cities-according-to-strava/">Runner's World: Cities with most runners</a>
+                  <a href="https://www.runnersworld.com/news/a20859873/these-are-the-top-running-cities-according-to-strava/" target="_blank">Runner's World: Cities with most runners</a>
                   <br></br>
-                  <a href="https://www.runnersworld.com/news/a43162278/best-cities-for-runners/">Runner's World: Best cities for runners</a>
+                  <a href="https://www.runnersworld.com/news/a43162278/best-cities-for-runners/" target="_blank">Runner's World: Best cities for runners</a>
                   <br></br>
-                  <a href="https://www.vacationraces.com/">Vacation Races</a>
+                  <a href="https://www.vacationraces.com/" target="_blank">Vacation Races</a>
                 </p>
               </div>
               <div id="barchart">

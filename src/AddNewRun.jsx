@@ -41,7 +41,7 @@ console.log(locations)
     }
 
 
-
+//this component only appears if state variable for add run button is true. See "shoe details" component
     return(
 
         <form type="submit" onSubmit={handleSubmit} className="add-new-run">

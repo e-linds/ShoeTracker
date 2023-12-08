@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import AddNewRun from "./AddNewRun"
-import { json } from 'react-router-dom'
 
 function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
     const {id, name, image, terrain, miles, notes, locations} = currentShoe
     const [addRunButton, setAddRunButton] = useState(false)
     const [notesUpdated, setnotesUpdated] = useState(false)
+    // controlled value for notes form
     const [notesValue, setNotesValue] = useState("")
 
 
+    // function to handle when "Add Run" button is clicked 
     function handleClick() {
         setAddRunButton(!addRunButton)
     }
@@ -37,14 +38,13 @@ function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
     //dummy state variable to trigger re-render
     setnotesUpdated(!notesUpdated)
     setNotesValue("")
-    
             }
-
         }
 
 
     return(
         <div className="shoedetails">
+            {/*first section of the main page: name and location*/}
             <div id="complete-details">
                 <h2>{name}</h2>
                 <p>{terrain}</p>
@@ -53,10 +53,12 @@ function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
                 {locations ? locations.map((each) => {
                     return <li>{each}</li>}) : null}
             </div>
+            {/*second section of the main page: image and delete button*/}
             <div id="img-and-delete">
                 <img src={image}/>
                 {currentShoe ? <button id="deletebutton" onClick={() => deleteShoe(id)}>Delete Shoe</button> : null}
             </div>
+            {/*third section of the main page: notes and add run button/form*/}
             <div id="notes-and-add-run">
                 <h3>{currentShoe ? "Notes" : null}</h3>
                 {notes?.map((each) => {
@@ -73,11 +75,13 @@ function ShoeDetails({ currentShoe, setCurrentShoe, deleteShoe }) {
                         <button id="add-note-button" type="submit"></button> 
                     </form>
                     : null
-                    }                      
+                    }                 
                 {currentShoe ? <button onClick={handleClick} id="add-new-run-button">{buttonText}</button> : null}
+                {/* if state variable addrunButton is true, form component below displays - if not, no form */}
                 {addRunButton ? <AddNewRun currentShoe={currentShoe} setCurrentShoe={setCurrentShoe}/> : null}
             </div>
         </div>
+        
     )
 }
 

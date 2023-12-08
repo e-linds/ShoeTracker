@@ -49,7 +49,7 @@ function AddNewShoe({ setShoes, shoes, setCurrentShoe }) {
 
     }
 
-
+//this dialog is imported from a package, and appears/disappears on click
     return(
         <>
         <button id="add-new-shoe-button" onClick={handleClickOpen}>Add New Shoe</button>
