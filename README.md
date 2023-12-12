@@ -1,7 +1,7 @@
 
 **README: ShoeTracker**
 
-ShoeTracker is a web application to assist runners in tracking the mileage and location history of their running shoes. In addition to logging shoes and associated information, the app provides visual analytis for both mileage and locations, and contains sections to input and view upcoming races, and maintain a list of other running gear. The app was built using React and Vite, utilizes Chart.js for analytics, and features a custom CSS styling for a colorful and visually appealing experience.
+ShoeTracker is a web application to assist runners in tracking the mileage and location history of their running shoes. In addition to storing shoes and associated information, the app provides visual analytics for both mileage and locations, and contains sections to input and view upcoming races, and maintain a list of other running gear. The app was built using React and Vite, utilizes Chart.js for analytics, and features a custom CSS styling for a colorful and visually appealing experience.
 
 **Features**
 1. Mileage Tracking: Easily log new mileage for each pair of running shoes to keep tabs on their usage.
